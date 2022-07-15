@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entendendo order</title>
+
+    <style>
+        .container{
+            display: flex;
+            max-width: 350px;
+            border: 1px solid black;
+        }
+
+        .item{
+            background-color: aqua;
+            flex: 1;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .direction{
+            flex-direction: column;
+        }
+        
+        .order-0{
+            order: 0;
+        }
+
+        .order-1{
+            order: 1;
+        }
+
+        .order-2{
+            order: 2;
+        }
+        
+        .order-3{
+            order: 3;
+        }
+
+        .order-4{
+            order: 4;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>row</h2>
+    <p>order: 0 (padrão)</p>
+    <section class="container">
+        <div class="item order-0">1</div>
+        <div class="item order-0">2</div>
+        <div class="item order-0">3</div>
+        <div class="item order-0">4</div>
+    </section>
+
+    <p>order: diferentes</p>
+    <section class="container">
+        <div class="item order-1">1</div>
+        <div class="item order-2">2</div>
+        <div class="item order-3">3</div>
+        <div class="item order-4">4</div>
+    </section>
+
+    <h2>column</h2>
+    <p>order: 0 (padrão)</p>
+    <section class="container direction">
+        <div class="item order-0">1</div>
+        <div class="item order-0">2</div>
+        <div class="item order-0">3</div>
+        <div class="item order-0">4</div>
+    </section>
+
+    <p>order: diferentes</p>
+    <section class="container direction">
+        <div class="item order-1">1</div>
+        <div class="item order-2">2</div>
+        <div class="item order-3">3</div>
+        <div class="item order-4">4</div>
+    </section>
+
+</body>
+</html>

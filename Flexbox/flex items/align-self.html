@@ -1,0 +1,94 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entendendo align-self</title>
+
+    <style>
+        .container{
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .item{
+            background: aqua;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .align-container {
+            align-items: center;
+        }
+
+        .direction {
+            flex-direction: column;
+        }
+
+        .center{
+            align-self: center;
+        }
+
+        .flex-start{
+            align-self: flex-start;
+        }
+
+        .flex-end{
+            align-self: flex-end;
+        }
+
+        .stretch{
+            align-self: stretch;
+        }
+
+        .baseline{
+            align-self: baseline;
+        }
+
+        .auto{
+            align-self: auto;
+        }
+    </style>
+  </head>
+  <body>
+
+    <h2>row</h2>
+    <p>1º situação</p>
+    <section class="container align-container">
+        <div class="item auto">ABC</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Lorem ipsum dolor sit</div>
+        <div class="item auto">Item 4</div>
+    </section>
+
+    <p>2º situação</p>
+    <section class="container">
+        <div class="item center">ABC</div>
+        <div class="item flex-start">123</div>
+        <div class="item stretch">Lorem ipsum dolor sit  ipsum dolor sit</div>
+        <div class="item flex-end">Item 4</div>
+    </section>
+
+    <h2>column</h2>
+    <p>1º situação</p>
+    <section class="container direction align-container">
+        <div class="item auto">ABC</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Lorem ipsum dolor sit</div>
+        <div class="item auto">Item 4</div>
+    </section>
+
+    <p>2º situação</p>
+    <section class="container direction">
+        <div class="item center">ABC</div>
+        <div class="item flex-start">123</div>
+        <div class="item stretch">Lorem ipsum dolor sit  ipsum dolor sit</div>
+        <div class="item flex-end">Item 4</div>
+    </section>
+
+    
+  </body>
+  </html>
