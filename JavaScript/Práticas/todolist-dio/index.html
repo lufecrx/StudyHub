@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- ícones das redes sociais -->
+    <script src="https://kit.fontawesome.com/d37c5443c6.js" crossorigin="anonymous"></script>
+    <title>To Do</title>
+</head>
+
+<body>
+    <header>
+        <div class="flex-container menu">
+            <div>
+                <h1>To Do</h1>
+            </div>
+
+            <div class="list-icons">
+                <a title="Codepen" class="link-icon" href="https://codepen.io/lufecrx" rel="noopener noreferrer"
+                    target="_blank">
+                    <i class="fab fa-codepen"></i>
+                </a>
+                <a title="GitHub" class="link-icon" href="https://github.com/lufecrx" rel="noopener noreferrer"
+                    target="_blank">
+                    <i class="fab fa-github-square"></i>
+                </a>
+                <a title="Linkedin" class="link-icon" href="https://www.linkedin.com/in/luizfelipecg/"
+                    rel="noopener noreferrer" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a title="Instagram" class="link-icon" href="https://www.instagram.com/lufecr_/"
+                    rel="noopener noreferrer" target="_blank">
+                    <i class="fab fa-instagram-square"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="flex-container todo-menu">
+            <div>
+                <h2>Tasks</h2>
+            </div>
+
+            <div class="flex-container task-list" id="list">
+            </div>
+
+            <div class="flex-container addTask">
+                <button id="addTask">Add task</button>
+                <input id="inputTask" type="text" maxlength="35" placeholder=" Add task" name="tarefa">
+            </div>
+            <div class="flex-container" id="msg">
+                ⚠ O campo não pode estar vazio ⚠
+            </div>
+
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

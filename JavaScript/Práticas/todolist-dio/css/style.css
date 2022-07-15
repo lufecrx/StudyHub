@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif, 'opera sans';
+}
+
+body {
+    background: linear-gradient(90deg,
+            rgba(65, 184, 131, 1) 0%,
+            rgba(0, 212, 255, 1) 100%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* conteúdo da página */
+
+header {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+header .list-icons {
+    display: flex;
+    max-width: 12rem;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .menu {
+    justify-content: space-between;
+}
+
+.link-icon {
+    text-decoration: none;
+    color: gray;
+    font-size: 2.5rem;
+    transition: color 0.3s;
+}
+
+.link-icon:hover {
+    color: #f5f5f5;
+}
+
+/* menu do todo */
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.todo-menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 90%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+.todo-menu h2 {
+    margin: 1rem;
+}
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    background-color: lightgray;
+    height: 2rem;
+    padding: 0 1rem;
+    width: 100%;
+    transition: background-color 0.5s;
+}
+
+.item:hover {
+    cursor: pointer;
+    background-color: rgb(194, 194, 194);
+}
+
+.item span {
+    margin: 0.5rem;
+}
+
+.addTask {
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.addTask button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 1.5rem;
+    background: linear-gradient(90deg,
+            rgba(65, 184, 131, 1) 0%,
+            rgba(0, 212, 255, 1) 100%);
+    border: none;
+    margin: 1rem;
+}
+
+.addTask button:hover {
+    cursor: pointer;
+}
+
+.addTask input {
+    height: 1.5rem;
+    border: 1px solid lightgray;
+}
+
+.addTask input:hover {
+    cursor: pointer;
+}
+
+#msg {
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    color: rgb(206, 25, 25);
+}
+
+/* estilização do checkbox e das tasks adicionadas */
+
+:checked+span {
+    text-decoration: line-through;
+    color: grey;
+}
+
+/* flex containers da página */
+.flex-container {
+    display: flex;
+    max-width: 500px;
+    margin: auto;
+    width: 100%;
+    min-width: 320px;
+}
